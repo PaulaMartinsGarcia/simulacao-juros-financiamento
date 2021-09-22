@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+    
+    <title>Simulação de financiamento</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simulação de financiamento</h1>
+      <form onsubmit="return calcular();">
+        <div class="simulador">
+          <div class="valor">
+            <label for="valor"><strong>Valor: </strong></label>
+            <input type="number" name="valor" id="valor" value="" required />
+          </div>
+          <div class="prazo">
+            <label for="prazo"><strong>Prazo (anos): </strong></label>
+            <input type="number" name="prazo" id="prazo" value="" required />
+          </div>
+          <div class="juros">
+            <label for="juros"><strong>Juros ao ano: </strong></label>
+            <input type="number" name="juros" id="juros" value="" step="0.01" required />
+          </div>
+        </div>
+        <div class="botao">
+          <button class="botao" type="submit">Simular</button>
+        </div>
+      </form>
+
+      <h2>Resultado</h2>
+      <div class="resultado">
+        <div class="prazom">
+          <label for="prazom"><strong>Prazo (meses): </strong></label>
+          <input type="number" name="prazom" id="prazom" readonly />
+        </div>
+        <div class="jurosm">
+          <label for="jurosm"><strong>Juros ao mês: </strong></label>
+          <input type="number" name="jurosm" id="jurosm" readonly />
+        </div>
+        <div class="jurosa">
+          <label for="jurosa"><strong>Juros acumulados: </strong></label>
+          <input type="number" name="jurosa" id="jurosa" readonly />
+        </div>
+      </div>
+
+      <table>
+          <thead>
+                <tr>
+                    <th><strong>Prestação</strong></th>
+                    <th><strong>Amortização</strong></th>
+                    <th><strong>Juros</strong></th>
+                    <th><strong>Total</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
